@@ -6,11 +6,11 @@
  * Copyright (c) 2003-2013 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @brief Wrapper for email logger plugin.
- * @package plugins.generic.emailLogger
+ * @brief Wrapper for Mandrill Mail plugin.
+ * @package plugins.generic.mandrillMail
  *
  */
-require_once('plugins/generic/mandrillMailer/MandrillMailPlugin.inc.php');
+require_once('plugins/generic/mandrillMail/MandrillMailPlugin.inc.php');
 
 return new MandrillMailPlugin();
 
