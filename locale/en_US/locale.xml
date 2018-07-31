@@ -12,6 +12,6 @@
  -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.generic.mandrillMailer.displayName">Mandrill cURL API</message>
-	<message key="plugins.generic.mandrillMailer.description">Use Mandrill API via cURL calls to bypass smtp and mail function limitaions on shared hosts.<message>
+	<message key="plugins.generic.mandrillMail.displayName">Mandrill cURL API</message>
+	<message key="plugins.generic.mandrillMail.description">Use Mandrill API via cURL calls to bypass smtp and mail function limitaions on shared hosts.<message>
 </locale>
