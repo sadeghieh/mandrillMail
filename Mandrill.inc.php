@@ -17,7 +17,7 @@
  * require_once 'Mandrill/Metadata.php';
  * require_once 'Mandrill/Exceptions.php';
  */
-require_once 'MandrillMessages.php';  
+require_once 'Mandrill_Messages.inc.php';  
 
 class Mandrill {
     
