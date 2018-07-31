@@ -1,21 +1,23 @@
 <?php
 
-require_once 'Mandrill/Templates.php';
-require_once 'Mandrill/Exports.php';
-require_once 'Mandrill/Users.php';
-require_once 'Mandrill/Rejects.php';
-require_once 'Mandrill/Inbound.php';
-require_once 'Mandrill/Tags.php';
-require_once 'Mandrill/Messages.php';
-require_once 'Mandrill/Whitelists.php';
-require_once 'Mandrill/Ips.php';
-require_once 'Mandrill/Internal.php';
-require_once 'Mandrill/Subaccounts.php';
-require_once 'Mandrill/Urls.php';
-require_once 'Mandrill/Webhooks.php';
-require_once 'Mandrill/Senders.php';
-require_once 'Mandrill/Metadata.php';
-require_once 'Mandrill/Exceptions.php';
+/* The following Mandrill API are not used
+ * require_once 'Mandrill/Templates.php';
+ * require_once 'Mandrill/Exports.php';
+ * require_once 'Mandrill/Users.php';
+ * require_once 'Mandrill/Rejects.php';
+ * require_once 'Mandrill/Inbound.php';
+ * require_once 'Mandrill/Tags.php';
+ * require_once 'Mandrill/Whitelists.php';
+ * require_once 'Mandrill/Ips.php';
+ * require_once 'Mandrill/Internal.php';
+ * require_once 'Mandrill/Subaccounts.php';
+ * require_once 'Mandrill/Urls.php';
+ * require_once 'Mandrill/Webhooks.php';
+ * require_once 'Mandrill/Senders.php';
+ * require_once 'Mandrill/Metadata.php';
+ * require_once 'Mandrill/Exceptions.php';
+ */
+require_once 'MandrillMessages.php';  
 
 class Mandrill {
     
@@ -73,21 +75,23 @@ class Mandrill {
 
         $this->root = rtrim($this->root, '/') . '/';
 
-        $this->templates = new Mandrill_Templates($this);
-        $this->exports = new Mandrill_Exports($this);
-        $this->users = new Mandrill_Users($this);
-        $this->rejects = new Mandrill_Rejects($this);
-        $this->inbound = new Mandrill_Inbound($this);
-        $this->tags = new Mandrill_Tags($this);
         $this->messages = new Mandrill_Messages($this);
-        $this->whitelists = new Mandrill_Whitelists($this);
-        $this->ips = new Mandrill_Ips($this);
-        $this->internal = new Mandrill_Internal($this);
-        $this->subaccounts = new Mandrill_Subaccounts($this);
-        $this->urls = new Mandrill_Urls($this);
-        $this->webhooks = new Mandrill_Webhooks($this);
-        $this->senders = new Mandrill_Senders($this);
-        $this->metadata = new Mandrill_Metadata($this);
+        /*** These Methods are not loaded for use in OJS
+         **  $this->templates = new Mandrill_Templates($this);
+         **  $this->exports = new Mandrill_Exports($this);
+         **  $this->users = new Mandrill_Users($this);
+         **  $this->rejects = new Mandrill_Rejects($this);
+         **  $this->inbound = new Mandrill_Inbound($this);
+         **  $this->tags = new Mandrill_Tags($this);
+         **  $this->whitelists = new Mandrill_Whitelists($this);
+         **  $this->ips = new Mandrill_Ips($this);
+         **  $this->internal = new Mandrill_Internal($this);
+         **  $this->subaccounts = new Mandrill_Subaccounts($this);
+         **  $this->urls = new Mandrill_Urls($this);
+         **  $this->webhooks = new Mandrill_Webhooks($this);
+         **  $this->senders = new Mandrill_Senders($this);
+         **  $this->metadata = new Mandrill_Metadata($this);
+         **//
     }
 
     public function __destruct() {
