@@ -7,7 +7,7 @@
  * Copyright (c) 2003-2013 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @package plugins.generic.mandrillMailer
+ * @package plugins.generic.mandrillMail
  * @class MandrillMailPlugin
  * @brief Plugin that will directs all emails sent by the system to Mandrill via cURL API.
  */
@@ -49,14 +49,14 @@ class MandrillMailPlugin extends GenericPlugin {
 	 * @copydoc Plugin::getDisplayName()
 	 */
 	function getDisplayName() {
-		return __('plugins.generic.mandrillMailer.displayName');
+		return __('plugins.generic.mandrillMail.displayName');
 	}
 
 	/**
 	 * @copydoc Plugin::getDescription()
 	 */ 
 	function getDescription() {
-		return __('plugins.generic.mandrillMailer.description');
+		return __('plugins.generic.mandrillMail.description');
 	}
 
 	/**
