@@ -91,7 +91,7 @@ class Mandrill {
          **  $this->webhooks = new Mandrill_Webhooks($this);
          **  $this->senders = new Mandrill_Senders($this);
          **  $this->metadata = new Mandrill_Metadata($this);
-         **//
+         **/
     }
 
     public function __destruct() {
